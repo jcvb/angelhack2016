@@ -81,9 +81,12 @@
       });
     </script>
     <div id="map"></div>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
+    $( document ).ready(function () {
+      initMap();
+    });
 
 function initMap() {
   var pos;
@@ -167,9 +170,6 @@ function initMap() {
           var pi = results[0].geometry.location;
           indicaciones(pi); 
          });
-        console.log(place);
-  
-        
 
         function indicaciones(pi) {
           var directionsDisplay = new google.maps.DirectionsRenderer;
@@ -195,12 +195,14 @@ function initMap() {
             // "property."
             travelMode: google.maps.TravelMode[selectedMode],
             transitOptions: {
-              modes: [google.maps.TransitMode.SUBWAY],
+              //modes: [google.maps.TransitMode.SUBWAY],
               routingPreference: google.maps.TransitRoutePreference.FEWER_TRANSFERS
             },
           }, function(response, status) {
             if (status == google.maps.DirectionsStatus.OK) {
+             
               directionsDisplay.setDirections(response);
+
             } else {
               window.alert('Directions request failed due to ' + status);
             }
@@ -210,6 +212,7 @@ function initMap() {
         infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
 
         infowindow.open(map, marker);
+          
       });
 
       // Sets a listener on a radio button to change the filter type on Places
@@ -237,6 +240,6 @@ function initMap() {
 }
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC01Jya3khSNepV_WkTWKpVDklrjyJAEEc&libraries=places&callback=initMap" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC01Jya3khSNepV_WkTWKpVDklrjyJAEEc&libraries=places"></script>
   </body>
 </html>

@@ -1,9 +1,25 @@
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: {lat: 19.4120362, lng: -99.18064319999996}
-  });
+$( document ).ready(function () {
+    var delaySplash;
+    delaySplash = window.setTimeout(showHome, 1000);
+});
 
-  var transitLayer = new google.maps.TransitLayer();
-  transitLayer.setMap(map);
+function showHome() {
+    $('#splash').fadeOut( 500 );
+    $('#login').fadeIn( 1000 );
 }
+
+function validateForm(){
+				var txtUser = $("#txtUser").val();
+				var txtPass = $("#txtPass").val();
+
+				if(txtUser == "" || txtPass == ""){
+					$("#msg").val("Verifica tu información.");
+					$("#login").hide();
+					$("#points").show();
+				}else{
+					$("#msg").val("");
+					$("#login").hide();
+					$("#points").show();
+				}
+
+			}

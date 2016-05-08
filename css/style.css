@@ -114,8 +114,15 @@ html, body {
 	text-align:center;
 }
 
-
-
+#splash{
+	background-image: url(../img/logogrande.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 100%;
+	width: 73%;
+	position: absolute;
+}
 
 #images{
 	float:right;
