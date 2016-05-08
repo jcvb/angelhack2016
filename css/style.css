@@ -1,14 +1,4 @@
 html, body {
-<<<<<<< HEAD
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-		#map {
-			height: 100%;
-			background: red;
-		}
-=======
 		background: #3A3634;
 		height: 100%;
 		margin: 0;
@@ -134,4 +124,3 @@ html, body {
 .flecha{
 	cursor: pointer;
 }
->>>>>>> origin/master
