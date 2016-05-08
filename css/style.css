@@ -1,8 +1,126 @@
 html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-		#map {
-			height: 100%;
-		}
+		background: #3A3634;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.grad {
+	    background: #3D3836; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(#3D3836, #282523); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(#3D3836, #282523); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(#3D3836, #282523); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(#3D3836, #282523); /* Standard syntax */
+	}
+
+
+	#map {
+	height: 100%;
+}
+
+.titulo{
+	 color:#EDD0A4;
+	 font-size: 44px;
+	 font-weight: bold;
+	 text-align: center;
+	 letter-spacing: 3px;
+}
+
+
+.titulo2{
+	 color:#DAD5CF;
+	 font-size: 18px;
+	 font-weight: bold;
+	 text-align: left;
+}
+
+
+.container{
+ 	max-width: 400px;
+	max-height: 600px;
+}
+
+
+.form-control{
+	background: #5C4D48;
+	color:#DAD5CF;
+	font-weight: bold;
+	text-indent: 25px;
+}
+
+
+.inputUsuario
+{
+    background-image: url('../img/iconopersona.png');
+    background-position: 1px center;
+    background-repeat: no-repeat;
+		height:36px;
+    padding:0x 0 0 16px;
+		vertical-align: middle;
+		width:265px;
+}
+
+
+.inputPass
+{
+    background-image: url('../img/candado.png');
+		background-position: 1px center;
+    background-repeat: no-repeat;
+		height:36px;
+    padding:0 0 0 16px;
+		vertical-align: middle;
+		width:265px;
+}
+
+
+.links{
+	cursor: pointer;
+}
+
+#msg{
+	color:red;
+	font-weight: bold;
+}
+
+#id, #invite{
+	width:100%;
+}
+
+
+
+.img-icono{
+	border: none;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	display: inline;
+	position: relative;
+	cursor: pointer;
+}
+
+
+.subtitulo1{
+	color:#DAD5CF;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+
+#txtBegin{
+	height: 55px;
+	background:#DF8E61;
+	border:none;
+	text-align:center;
+}
+
+
+
+
+#images{
+	float:right;
+}
+
+.flecha{
+	cursor: pointer;
+}
